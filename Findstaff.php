@@ -279,7 +279,7 @@ require 'connectdb.php';
                         </div>
 
                         <div class="col-xl-6 col-md-6 mb-4 text-center">
-                            <img src="img/img-Staff/<?php echo $staff["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="display:inline" alt="PLAYER" width="500rem">
+                            <img src="img/img-Staff/<?php echo $staff["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="display:inline" alt="PLAYER" width="400rem" height="400rem">
                             <h5 class="text-gray-600">
                                 <?php echo $staff["Vita"]; ?>
                             </h5>
@@ -345,7 +345,7 @@ require 'connectdb.php';
                                     <a class="align-items-center justify-content-center nav-link" style="color : #fff" href="/Findstaff.php?Check_Name=<?php echo $Random_player["Name"] ?>&Check_App=<?php echo $Random_player["Appointment"]?>"><?php echo $Random_player["Name"] ?> </a>
                                     </h2>
 
-                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem;" alt="Image">
+                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem;  height:25rem;" alt="Image">
                                     <?php
                                     echo "<p>$Random_player[vita]</p>"
                                     ?>
@@ -362,7 +362,7 @@ require 'connectdb.php';
                                 <h3 class="text-gray-600">
                                     <a class="align-items-center justify-content-center nav-link" style="color : #fff" href="/Findstaff.php?Check_Name=<?php echo $Random_player["Name"] ?>&Check_App=<?php echo $Random_player["Appointment"]?>"><?php echo $Random_player["Name"] ?> </a>
                                     </h2>
-                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem;" alt="Image">
+                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png"  class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem; height:25rem;" alt="Image">
                                     <?php
                                     echo "<p>$Random_player[vita]</p>"
                                     ?>
@@ -380,7 +380,7 @@ require 'connectdb.php';
                                 <h3 class="text-gray-600">
                                     <a class="align-items-center justify-content-center nav-link" style="color : #fff" href="/Findstaff.php?Check_Name=<?php echo $Random_player["Name"] ?>&Check_App=<?php echo $Random_player["Appointment"]?>"><?php echo $Random_player["Name"] ?> </a>
                                     </h2>
-                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem;" alt="Image">
+                                    <img src="img/img-Staff/<?php echo $Random_player["Name"] ?>.png" class="img-fluid px-3 px-sm-4 mt-3 mb-4  img-circle " style="width:25rem;  height:25rem;" alt="Image">
                                     <?php
                                     echo "<p>$Random_player[vita]</p>"
                                     ?>
