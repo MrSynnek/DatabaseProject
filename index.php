@@ -264,7 +264,7 @@ require 'connectdb.php';
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
                         $
                         <?php
-                        $temp = $conn->query("SELECT SUM(In_sponser + In_ticket + In_copyr + In_award + In_playerout) as Earn from  club  WHERE Alias = 'The Sky Blues'");
+                        $temp = $conn->query("SELECT SUM(In_sponser + In_ticket + In_copyr + In_award + In_playerout) as Earn from  club  WHERE Name = 'Manchester City'");
                         $Earning = $temp->fetch_assoc();
                         echo number_format($Earning["Earn"]);
                         ?>
@@ -288,7 +288,7 @@ require 'connectdb.php';
                       <div class="h5 mb-0 font-weight-bold text-gray-800">
                         
                         <?php
-                        $temp = $conn->query("SELECT SUM(Ex_player + Ex_staff + Ex_state + Ex_playerin + Ex_misscell) as Expen from  club  WHERE Alias = 'The Sky Blues'");
+                        $temp = $conn->query("SELECT SUM(Ex_player + Ex_staff + Ex_state + Ex_playerin + Ex_misscell) as Expen from  club  WHERE Name = 'Manchester City'");
                         $Expense = $temp->fetch_assoc();
                         echo number_format($Expense["Expen"]);
                         ?>
@@ -418,7 +418,7 @@ require 'connectdb.php';
             <!-- Content Column -->
             <div class="col-lg-6 mb-4">
               <?php
-              $temp = $conn->query("SELECT * from club  WHERE Alias = 'The Sky Blues'");
+              $temp = $conn->query("SELECT * from club  WHERE Name = 'Manchester City' ");
               $Income = $temp->fetch_assoc();
               ?>
               <!-- Project Card Example -->
@@ -474,7 +474,7 @@ require 'connectdb.php';
             </div>
             <div class="col-lg-6 mb-4">
               <?php
-              $temp = $conn->query("SELECT * from club WHERE Alias Like \"The Sky Blues\"");
+              $temp = $conn->query("SELECT * from club WHERE Name = 'Manchester City'");
               $Payout = $temp->fetch_assoc();
               ?>
               <div class="card shadow mb-4">
